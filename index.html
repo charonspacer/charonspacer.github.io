@@ -21,7 +21,8 @@
     <script>
         document.getElementById('displayButton').addEventListener('click', function() {
             const text = document.getElementById('inputText').value;
-            document.getElementById('output').textContent = text; // Safe, shows as plain text
+            // Use innerHTML to render HTML as DOM
+            document.getElementById('output').innerHTML = text;
         });
     </script>
 
